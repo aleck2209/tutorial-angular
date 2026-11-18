@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, input } from '@angular/core';
+import { HousingLocationInfo } from '../housinglocation';
 
 @Component({
   imports: [],
@@ -7,4 +8,5 @@ import { Component } from '@angular/core';
   templateUrl: './housing-location.html',
 })
 export class HousingLocation {
+  housingLocation = input.required<HousingLocationInfo>()
 }
